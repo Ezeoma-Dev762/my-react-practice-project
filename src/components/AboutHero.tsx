@@ -1,6 +1,12 @@
 // import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
+import type { ReactNode } from "react";
 
-function AboutHero({children}) {
+interface AboutHeroProps {
+  children: ReactNode;
+}
+
+function AboutHero({children}: AboutHeroProps) {
   return (
     <section className="relative h-[280px] w-[100%] overflow-hidden bg-[#effcff]">
 

@@ -1,4 +1,10 @@
-function Achievement({ imageLocation, achievement, color }) {
+interface AchievementProps {
+  imageLocation: string;
+  achievement: string;
+  color: string;
+}
+
+function Achievement({ imageLocation, achievement, color }: AchievementProps) {
 
 
 
