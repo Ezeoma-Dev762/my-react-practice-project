@@ -1,5 +1,9 @@
 import { useState } from "react";
 
+import telephone from "../assets/telephone_icon.png"
+import usflag from "../assets/united-states_icon.png"
+import downarrow from "../assets/down-arrow_icon.png"
+
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -20,7 +24,7 @@ function Navbar() {
           <p className="flex items-center text-sm font-bold text-teal-400">
             <img
               className="size-5"
-              src="../src/assets/telephone_icon.png"
+              src={telephone}
             />
 
             <span className="mx-2">
@@ -29,12 +33,12 @@ function Navbar() {
 
             <img
               className="size-5"
-              src="../src/assets/united-states_icon.png"
+              src={usflag}
             />
 
             <img
               className="mx-2 size-5"
-              src="../src/assets/down-arrow_icon.png"
+              src={downarrow}
             />
           </p>
 

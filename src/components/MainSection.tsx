@@ -1,3 +1,15 @@
+import brand1 from "../assets/roche-brand_icon.png";
+import brand2 from "../assets/sant.png";
+import brand3 from "../assets/tacobell-brand_icon.png";
+import brand4 from "../assets/Nivea-brand_icon.png";
+import brand5 from "../assets/toyota-brand_icon.jpeg";
+import brand6 from "../assets/bancaribe-brand_icon.png";
+
+import leftarrow from "../assets/back-arrow.png";
+import rightarrow from "../assets/right-arrow.png";
+
+import hero1 from "../assets/image1.jpg";
+import hero2 from "../assets/image2.jpg";
 function MainSection() {
     return(
         <>
@@ -51,7 +63,7 @@ function MainSection() {
 
                             <button className="border-2 border-teal-500 rounded-full w-12 h-12 bg-white-500 shadow-md">
                                 <span className="my-auto mx-auto text-white">
-                                    <img className="ml-[0px] md:ml-[10px] lg:ml-[10px] text-teal mx-2 size-6" src="../src/assets/back-arrow.png"></img>
+                                    <img className="ml-[0px] md:ml-[10px] lg:ml-[10px] text-teal mx-2 size-6" src={leftarrow}></img>
                                 </span>
                             </button>
 
@@ -68,7 +80,25 @@ function MainSection() {
                                 duration-300
                                 hover:grayscale-0
                                 hover:opacity-100
-                            " src="../src/assets/roche-brand_icon.png"></img>
+                            " src={brand1}>
+
+                            </img>
+                            </a>
+                            
+                            <a
+                            href="#"
+                            className="text-gray-700 hover:text-teal-500"
+                            >
+                            <img className="
+                                h-12 w-28
+                                object-contain
+                                grayscale
+                                opacity-60
+                                transition
+                                duration-300
+                                hover:grayscale-0
+                                hover:opacity-100
+                            " src={brand2}></img>
                             </a>
 
                             <a
@@ -84,7 +114,7 @@ function MainSection() {
                                 duration-300
                                 hover:grayscale-0
                                 hover:opacity-100
-                            " src="../src/assets/sant.png"></img>
+                            " src={brand3}></img>
                             </a>
 
                             <a
@@ -100,7 +130,7 @@ function MainSection() {
                                 duration-300
                                 hover:grayscale-0
                                 hover:opacity-100
-                            " src="../src/assets/tacobell-brand_icon.png"></img>
+                            " src={brand4}></img>
                             </a>
 
                             <a
@@ -116,7 +146,7 @@ function MainSection() {
                                 duration-300
                                 hover:grayscale-0
                                 hover:opacity-100
-                            " src="../src/assets/Nivea-brand_icon.png"></img>
+                            " src={brand5}></img>
                             </a>
 
                             <a
@@ -132,28 +162,12 @@ function MainSection() {
                                 duration-300
                                 hover:grayscale-0
                                 hover:opacity-100
-                            " src="../src/assets/toyota-brand_icon.jpeg"></img>
-                            </a>
-
-                            <a
-                            href="#"
-                            className="text-gray-700 hover:text-teal-500"
-                            >
-                            <img className="
-                                h-12 w-28
-                                object-contain
-                                grayscale
-                                opacity-60
-                                transition
-                                duration-300
-                                hover:grayscale-0
-                                hover:opacity-100
-                            " src="../src/assets/bancaribe-brand_icon.png"></img>
+                            " src={brand6}></img>
                             </a>
 
                             <button className="rounded-full w-12 h-12">
                                 <span className="my-auto mx-auto text-white">
-                                    <img className="mx-2 size-12 shadoow-md" src="../src/assets/right-arrow.png"></img>
+                                    <img className="mx-2 size-12 shadoow-md" src={rightarrow}></img>
                                 </span>
                             </button>
                         
@@ -166,7 +180,7 @@ function MainSection() {
                     <div className="shrink-0 mr-8">
                         <img
                             className="sm:size-50 md:size-100 object-cover sm:shadow-xl md:shadow-2xl"
-                            src="../src/assets/image1.jpg"
+                            src={hero1}
                             alt="Hero Banner"
                         />
                     </div>
@@ -214,7 +228,7 @@ function MainSection() {
                     <div className="shrink-0">
                         <img
                             className="sm:size-50 md:size-100 object-cover sm:shadow-xl md:shadow-2xl"
-                            src="../src/assets/image2.jpg"
+                            src={hero2}
                             alt="Hero Banner"
                         />
                     </div>

@@ -10,7 +10,23 @@ import person9 from "../assets/person9.jpg";
 import person10 from "../assets/person10.jpg";
 import person11 from "../assets/person11.jpg";
 import person12 from "../assets/person12.jpg";
+
+import person13 from "../assets/person13.jpg";
+import person14 from "../assets/person14.jpg";
+import person15 from "../assets/person15.jpg";
+import person16 from "../assets/person16.jpg";
+import person17 from "../assets/person17.jpg";
+
+import cylinders from "../assets/cylinder-shapes.png";
+
+import leftarrow from "../assets/back-arrow.png";
+import rightarrow from "../assets/right-arrow.png";
+
 import Achievement from "./Achievement";
+import achievement1 from "../assets/schedule.png";
+import achievement2 from "../assets/group.png";
+import achievement3 from "../assets/layers.png";
+import achievement4 from "../assets/apartment.png";
 
 const teamMembers = [
   {
@@ -163,7 +179,7 @@ function TeamSection() {
                 h-auto
                 object-contain
             "
-            src="../src/assets/cylinder-shapes.png"
+            src={cylinders}
         />
         </div>
 
@@ -202,7 +218,7 @@ function TeamSection() {
       <div>
         {/* Image 1 - slightly higher */}
         <img
-          src="../src/assets/person13.jpg"
+          src={person13}
           className="h-[270px] w-[97.5px] -translate-y-4 rounded-md object-cover"
         />
       </div>
@@ -210,7 +226,7 @@ function TeamSection() {
       <div>
         {/* Image 2 - lower */}
         <img
-          src="../src/assets/person14.jpg"
+          src={person14}
           className="h-[180px] w-[187.5px] translate-y-5 rounded-md object-cover"
         />
       </div>
@@ -218,7 +234,7 @@ function TeamSection() {
       <div>
         {/* Image 3 - normal */}
         <img
-          src="../src/assets/person15.jpg"
+          src={person15}
           className="h-[270px] w-[240px] rounded-md object-cover"
         />
       </div>
@@ -226,7 +242,7 @@ function TeamSection() {
       <div>
         {/* Image 4 - higher */}
         <img
-          src="../src/assets/person16.jpg"
+          src={person16}
           className="h-[270px] w-[172.5px] -translate-y-5 rounded-md object-cover"
         />
       </div>
@@ -234,7 +250,7 @@ function TeamSection() {
       <div>
         {/* Image 5 - normal */}
         <img
-          src="../src/assets/person17.jpg"
+          src={person17}
           className="h-[270px] w-[232px] rounded-md object-cover"
         />
       </div>
@@ -245,13 +261,13 @@ function TeamSection() {
     <div className="mx-auto flex w-fit items-center gap-2 mt-8">
         <button className="border-2 border-teal-400 bg-white rounded-full w-10 h-10 bg-teal-500">
           <span className="my-auto mx-auto text-teal">
-            <img className="ml-[6px] size-6" src="../src/assets/back-arrow.png"></img>
+            <img className="ml-[6px] size-6" src={leftarrow}></img>
           </span>
         </button>
 
         <button className="rounded-full w-10 h-10">
           <span className="my-auto mx-auto text-white">
-            <img className="mr-[6px] size-10" src="../src/assets/right-arrow.png"></img>
+            <img className="mr-[6px] size-10" src={rightarrow}></img>
           </span>
         </button>
       </div>
@@ -338,25 +354,25 @@ function TeamSection() {
       <div className="grid lg:grid-cols-4 gap-0 text-center">
 
         <Achievement
-          imageLocation="../src/assets/schedule.png"
+          imageLocation={achievement1}
           achievement="2005 founded"
           color ="text-blue-600"
         />
 
         <Achievement
-          imageLocation="../src/assets/group.png"
+          imageLocation={achievement2}
           achievement="More than 32 people"
           color = "text-orange-600"
         />
 
         <Achievement
-          imageLocation="../src/assets/layers.png"
+          imageLocation={achievement3}
           achievement="More than 800 projects developed"
           color = "text-green-500"
         />
 
         <Achievement
-          imageLocation="../src/assets/apartment.png"
+          imageLocation={achievement4}
           achievement="More than 3 development centers"
           color = "text-purple-800"
         />
@@ -432,15 +448,15 @@ function TeamSection() {
     >
 
       {/* Footer content */}
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid md:grid-cols-4 grid-cols-1 lg:gap-0 gap-8 md:max-w-[850px] flex mx-auto">
 
         {/* ABETUP */}
-        <div>
+        <div className="md:mx-0 ml-[70px]">
           <h2 className="text-xl font-bold">
             ABETUP
           </h2>
 
-          <div className="max-w-sm">
+          <div className="max-w-[180px]">
             <p className="mt-3 text-xs leading-5 text-gray-600">
               Lorem Ipsum Register for our free
               online course where we'll show you
@@ -471,7 +487,7 @@ function TeamSection() {
 
 
         {/* About */}
-        <div>
+        <div className="md:mx-0 ml-[70px]">
           <h3 className="font-bold">
             About
           </h3>
@@ -487,7 +503,7 @@ function TeamSection() {
 
 
         {/* Company */}
-        <div>
+        <div className="md:mx-0 ml-[70px]">
           <h3 className="font-bold">
             Company
           </h3>
@@ -503,7 +519,7 @@ function TeamSection() {
 
 
         {/* Contact */}
-        <div>
+        <div className="md:mx-0 ml-[70px]">
           <h3 className="font-bold">
             Contact Info
           </h3>
@@ -531,7 +547,7 @@ function TeamSection() {
 
 
       {/* Copyright */}
-      <div className="mt-8 border-t border-gray-300 pt-5 text-center text-xs text-gray-600 font-bold">
+      <div className="mt-8 border-t border-gray-300 pt-5 text-center text-xs text-gray-600 font-bold lg:max-w-[850px] mx-auto">
         ©2021 ABETUP. All rights reserved.
       </div>
 
